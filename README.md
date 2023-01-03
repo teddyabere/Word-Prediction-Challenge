@@ -5,7 +5,7 @@
 The algorithm should be able to take a string of character as an input and use it to predict the most likely words or phrases that the user is attempting to type. It should be able to handle variations in spelling, and capitalization and it should be able to suggest multiple options to the user if there are multiple possible matches.
 
 ## Solution 
-Based on the above problem I tried to write an algorithm for predicting words while the user types on a search bar or text field.
+Based on the above problem I tried to write an algorithm for predicting words while the user types on a search bar or text field. The best way to do such algorithms is implementing tree functionality. there is an algorithm called prefix tree, based on my research I found that this efficent. 
 ### Language Used: Javascript
 ### Data Used: Found Here [List of Ethiopian Cities]( http://www.ethiovisit.com/ethiopia/ethiopia-regions-and-cities.html#googtrans(en|en) "Ethio Visit") through web scraping. 
 
@@ -15,13 +15,20 @@ But this function check the given search string with all the list of data ans it
 2. Using Linked list method
 : In this method the algorithm check if there are liked lists of the given string or character. the algorithm creates linked list of tree and it check if string has similar words in the list of linked words. Finds all words with the given prefix. This method has Time complexity of O(n), Space O(n), n is number of nodes involved (include prefix and branches). 
  
-3. Using Hashmap Method 
+3. Using Hashmap Method
+Hash Map uses key value pairs. Instead of loop through all the data available to get the matched words. Hash map searches for a value by taking the key. It is efficent and fast to search for mached words.  This method has Time complexity of O(n), Space O(n), n is number of nodes involved (include prefix and branches). 
 
 ## Implementation 
 I used Javascript to solve the challenge and used HTML and CSS to showcase the results of the above algorithms. 
 
 ## Unit Testing
-I used unit testing to test the algorithms. Based on the test cases the following results occurred: 
+I used unit testing to test the algorithms. I used Jest testing library to perform the unit test.  
+some of the test cases I used: 
+ "addis ababa"  expected result "addis ababa"--- test result "Passed"
+ "awas"  expected result "awash" and "awasa"--- test result "Passed"
+ "ጅጋ"  expected result "ጅማ"--- test result "Failed"
+
+
 
 
 

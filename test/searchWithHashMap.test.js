@@ -24,3 +24,15 @@ test("English 3", () => {
 test("English 4", () => {
   expect(a.searchWord("awas")).toEqual(["awasa","awash"]);
 });
+test("Amharic 1", () => {
+  expect(a.searchWord("ወረ")).toEqual(["ወረ ኢሉ"]);
+});
+test("Amharic 2", () => {
+  expect(a.searchWord("አዲስ")).toEqual(["አዲስ አበባ"]);
+});
+test("Amharic 3", () => {
+  expect(a.searchWord("ባሌ")).toEqual(["ባሌ ሮቤ"]);
+});
+test("Amharic 4", () => {
+  expect(a.searchWord("ጅጋ")).toEqual(["ጅማ"]);
+});
