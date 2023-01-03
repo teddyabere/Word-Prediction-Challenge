@@ -1,0 +1,16 @@
+{
+  "name": "360_Ground_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./searchMapforTest.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3"
+  }
+}
